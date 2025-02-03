@@ -160,15 +160,17 @@ Alternatively, you can sign in to [DuckDNS](https://www.duckdns.org) (with a soc
 
 ## Installation
 
-Build GoDNS by running (from the root of the repository):
+1. Install go version `go1.20.3 windows/amd64` (Specific for Windows 7 32-bit)
+2. Build GoDNS by running (from the root of the repository):
 
-```bash
+```cmd
 cd cmd/godns        # go to the GoDNS directory
 go mod download     # get dependencies
+SET GOARCH=386      # set go env to build win32 binary (if needed)
 go build            # build
 ```
 
-You can also download a compiled binary from the [releases](https://github.com/TimothyYe/godns/releases).
+You can also download a compiled binary from the [releases](https://github.com/a84926601/godns/releases).
 
 ## Usage
 
